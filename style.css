@@ -223,6 +223,10 @@ body.dark-mode .contact-area {
   background-image: url("images/contact-dark.jpeg");
 }
 
+body.dark-mode .music-area {
+  background-image: url("images/star.jpeg");
+}
+
 section {
   transition: background-image 0.5s ease-in-out;
 }
@@ -234,7 +238,7 @@ section {
   font-size: 16px;
   font-family: "Kirang Haerang", system-ui;
   cursor: pointer;
-  background-color: #111;
+  background-color: #5b5b5b;
   color: #f5f5f5;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -313,7 +317,7 @@ body.dark-mode #helloBtn:hover {
 }
 
 .music-area {
-  background-image: url("images/star.jpeg");
+  background-image: url("images/star!.jpeg");
   background-size: cover;
   background-position: center;
   height: 450px;
