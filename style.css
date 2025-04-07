@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kirang Haerang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.header {
+  background-color: rgb(11, 11, 11);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+nav {
+  display: flex; /*가로정렬* 여기서 따로 felx-direction 지정 안해줘도 자동으로 가로정렬됨*/
+  gap: 20px;
+}
+
+nav li {
+  list-style: none; /*리스트 앞 점 제거*/
+  font-size: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none; /*밑줄제거*/
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+.dark-mode a {
+  color: hsl(260, 100%, 72%);
+}
+
+section {
+  padding: 10px 0; /*내부요소 위아래 20px, 좌우0*/
+}
+
+.banner-area {
+  background-image: url("images/banner2.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-area h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 100px 0 20px 0;
+  margin-top: 180px;
+}
+
+.banner-area h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 100;
+}
+
+.about-area {
+  background-image: url("images/about.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-area li {
+  list-style: none;
+}
+
+.about-area h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-area p {
+  font-size: 15px;
+}
+.about-left img {
+  width: 200px; /* 가로 크기 */
+  height: 200px; /* 세로 크기 */
+  border-radius: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-left img:hover {
+  transform: rotate(10deg);
+}
+
+.portfolio-area {
+  background-image: url("images/portfolio.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.portfolio-area li {
+  list-style: none;
+  margin: 30px 0; /* 간격 조정 */
+}
+
+.portfolio-content li h4 {
+  color: rgb(98, 200, 125);
+  font-size: 25px;
+}
+
+.portfolio-content li img {
+  display: block;
+  margin-bottom: 10px; /* 이미지와 h4 사이 간격 */
+}
+
+.portfolio-content h4 {
+  margin-bottom: 10px; /* h4와 p 사이 여백 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /*리스트 간격 조정*/
+}
+
+.portfolio-title {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.portfolio-content img:hover {
+  filter: brightness(50%);
+}
+
+.portfolio-content img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  transition: filter 0.1s ease-in-out;
+}
+
+.contact-area {
+  background-image: url("images/contact.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.contact-list {
+  list-style: none; /* 리스트 앞 점 제거 */
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 40px 0; /* 간격 조정 */
+  font-size: 18px;
+}
+.contact-list i {
+  color: #d7eaff; /* 아이콘 색상 */
+  font-size: 24px; /* 아이콘 크기 */
+}
+
+.footer {
+  background-color: rgb(11, 11, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  color: white;
+  height: 100px;
+}
+
+body.dark-mode .banner-area {
+  background-image: url("images/banner2-dark.jpeg");
+}
+
+body.dark-mode .about-area {
+  background-image: url("images/about-dark.jpeg");
+}
+
+body.dark-mode .portfolio-area {
+  background-image: url("images/portfolio-dark.jpeg");
+}
+
+body.dark-mode .contact-area {
+  background-image: url("images/contact-dark.jpeg");
+}
+
+section {
+  transition: background-image 0.5s ease-in-out;
+}
+
+#darkModeToggle {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Kirang Haerang", system-ui;
+  cursor: pointer;
+  background-color: #111;
+  color: #f5f5f5;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#darkModeToggle:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+body.dark-mode #darkModeToggle {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+body.dark-mode #darkModeToggle:hover {
+  background-color: #ddd;
+}
+
+#helloBtn {
+  margin-top: 20px;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-family: "Kirang Haerang", system-ui;
+  background-color: #e3e1ff;
+  color: rgb(77, 97, 227);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+#helloBtn:hover {
+  background-color: #887dff;
+  color: #e3e1ff;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #helloBtn {
+  background-color: #ffb74d;
+  color: #222;
+}
+
+body.dark-mode #helloBtn:hover {
+  background-color: #ffa726;
+}
+#greetingText {
+  transition: all 0.3s ease;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* 애니메이션 정의 */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  animation: bounce 0.4s ease;
+}
+
+.music-area {
+  background-image: url("images/star.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.music-content {
+  background-color: rgba(0, 0, 0, 0.6); /* 반투명 박스 */
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.music-box {
+  background-color: lightgray;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+}
+
+#musicBtn {
+  background-color: #f9c63d;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#musicBtn:hover {
+  background-color: #f9844a;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  animation: bounce 0.4s ease;
+}

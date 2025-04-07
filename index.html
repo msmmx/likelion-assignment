@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여민서 포트폴리오</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h2><a href="#">👾MSMMX WORLD👾</a></h2>
+      <nav>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </nav>
+      <button id="darkModeToggle">🌙 다크모드</button>
+    </div>
+
+    <section class="music-area">
+      <div class="music-content">
+        <h2>🎧오늘의 노래추천🎧</h2>
+        <div class="music-box">
+          <p id="musicText"><strong>어떤 노래가 나올까?</strong></p>
+        </div>
+        <button id="musicBtn">랜덤 노래 추천받기</button>
+      </div>
+    </section>
+
+    <section class="banner-area">
+      <h1>안녕하세요, 여민서입니다😜</h1>
+      <p>⬇️ 시간에 따라 문구가 달라져요...더보기 ⬇️</p>
+      <br />
+
+      <h3 id="greetingText">👋 아래 인사를 눌러보세요!</h3>
+      <button id="helloBtn">안녕~</button>
+    </section>
+
+    <section class="about-area" id="about">
+      <h3 class="section-title">ABOUT ME</h3>
+      <ul class="about-content">
+        <li class="about-left">
+          <img src="images/about2.jpeg" alt="프로필이미지" />
+        </li>
+        <li class="about-right">
+          <h2>여민서(2001.01.13)</h2>
+          <p>
+            고학번 화석이 되어버린 사람..ㅎㅎ<br />개발실력키워서 스스로
+            제품만들어보는게 목표에요:> <br /><br />
+
+            멋사에서 빠르게 성장해보겠습니다! 화이팅~!
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio-area" id="portfolio">
+      <h3 class="portfolio-title">PORTFOLIO</h3>
+      <ul class="portfolio-content">
+        <li>
+          <a
+            href="https://ai-creator-git-main-minxuyeos-projects.vercel.app/"
+            target="_blank"
+            class="portfolio-first"
+            ><img src="images/port1.jpeg" alt="포폴이미지"
+          /></a>
+          <h4>프로젝트 1</h4>
+          <p>
+            최근에 만들어본 꿈 해몽 AI 서비스에요 <br />이미지 클릭하고 서비스
+            써보러가세용:>
+          </p>
+        </li>
+        <li>
+          <a
+            href="https://github.com/msmmx/board"
+            class="portfolio-second"
+            target="_blank"
+            ><img src="images/port2.jpeg" alt="포폴이미지"
+          /></a>
+          <h4>프로젝트 2</h4>
+          <p>두 번째 프로젝트입니다. 게시판을 만들어봤어요</p>
+        </li>
+        <li>
+          <a
+            href="https://github.com/msmmx/deeplink"
+            class="portfolio-third"
+            target="_blank"
+            ><img src="images/port3.jpeg" alt="포폴이미지"
+          /></a>
+          <h4>프로젝트 3</h4>
+          <p>세 번째 프로젝트입니다. 별거아니에요</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact-area" id="contact">
+      <h3 class="contact-title">CONTACT</h3>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            주소<br />
+            서울시 관악구
+          </p>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <p>
+            전화번호<br />
+            010-7242-9274
+          </p>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <p>
+            이메일<br />
+            minseo200113@yonsei.ac.kr
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      <h3>과제 끝 안녕~~</h3>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
